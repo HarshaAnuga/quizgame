@@ -1,0 +1,43 @@
+const prompt=require("prompt-sync")()
+console.log("welcome to the computer hardware quiz")
+
+let correctAnswers=0;
+const totalquestions=3;
+
+const answer1 =prompt("What is the brain of computer?: ");
+const correct_answer1="cpu";
+if(answer1.toLocaleLowerCase()===correct_answer1){
+    console.log("you got it correct");
+    correctAnswers++;
+}
+else{
+    console.log("it is wrong");
+}
+
+
+
+const answer2 =prompt("What is better a 3090ti or a 4060?: ");
+const correct_answer2="3090ti";
+if(answer2.toLocaleLowerCase()===correct_answer2){
+    console.log("you got it correct");
+    correctAnswers++;
+}
+else{
+    console.log("it is wrong");
+}
+
+
+const answer3 =prompt("What is recommed amount of ram in 2023: ");
+const correct_answer3="16gb";
+if(answer3.toLocaleLowerCase()===correct_answer3){
+    console.log("you got it correct");
+    correctAnswers++;
+}
+else{
+    console.log("it is wrong");
+}
+
+console.log("you got", correctAnswers,"questions correct!")
+console.log("your score", (correctAnswers/totalquestions)*100,"percent");
+
+
